@@ -2,12 +2,13 @@ package org.example.azuretest.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @Controller
-@RequestMapping("")
+@RestController
 public class AzureController {
 
-    @RequestMapping("")
+    @RequestMapping("/")
     public String getHello() {
         return "hello";
     }
